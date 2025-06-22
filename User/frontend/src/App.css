@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations and styles */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Delay classes */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
+.delay-700 {
+  animation-delay: 700ms;
+}
+.delay-800 {
+  animation-delay: 800ms;
+}
+.delay-900 {
+  animation-delay: 900ms;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+.delay-1100 {
+  animation-delay: 1100ms;
+}
+.delay-1200 {
+  animation-delay: 1200ms;
+}
+.delay-1400 {
+  animation-delay: 1400ms;
+}
+.delay-1500 {
+  animation-delay: 1500ms;
+}
+.delay-1600 {
+  animation-delay: 1600ms;
+}
+.delay-1700 {
+  animation-delay: 1700ms;
+}
+.delay-1800 {
+  animation-delay: 1800ms;
+}
+.delay-2000 {
+  animation-delay: 2000ms;
+}
+
+/* Backdrop blur fallback */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+/* Custom gradient text */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
