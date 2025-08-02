@@ -45,7 +45,6 @@ function App() {
       {/* Loading Spinner */}
       <Loading />
       {/* OTP Component */}
-      <Otp />
 
       {/* Main Content */}
 
