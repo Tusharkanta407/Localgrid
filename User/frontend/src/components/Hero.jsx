@@ -3,7 +3,8 @@ import { Shield, Star } from "lucide-react"
 
 const Hero = () => {
   return (
-    <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50">
+    <section className="relative pt-36 lg:pt-28 pb-16 lg:pb-24 overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50">
+
       {/* 3D Stars Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Layer 1 - Large Stars */}

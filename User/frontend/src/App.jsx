@@ -17,6 +17,8 @@ import Footer from "./components/Footer"
 import BackgroundElements from "./components/BackgroundElements"
 import SimpleCardGrid from "./components/SimpleCardGrid"
 import SimpleCleaningServices from "./components/SimpleCleaningServices"
+import Loading from "./components/Loading"
+import Otp from "./components/Otp"
 import "./App.css"
 
 function App() {
@@ -40,6 +42,12 @@ function App() {
 
       {/* Mobile Menu */}
       <MobileMenu isMobileMenuOpen={isMobileMenuOpen} closeMobileMenu={closeMobileMenu} />
+      {/* Loading Spinner */}
+      <Loading />
+      {/* OTP Component */}
+      <Otp />
+
+      {/* Main Content */}
 
       {/* Hero Section */}
       <Hero />
